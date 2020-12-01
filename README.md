@@ -1,16 +1,41 @@
-# Blockchain Commons `$projectname`
+# Blockchain Commons Torgap
 
-**`$ProjectDescription`** is …
+**Torgap** is the Blockchain Commons architecture model for creating gaps between connected apps and microservices to support privacy, non-correlation, and censorship-resistance. 
 
 ## Additional Information
 
 The following files contain…
 
-* `$ListOfEssentialDocs`
+* **[Torgap FAQ](Docs/FAQ.md)** — More info on what Torgaps are and why they're useful.
 
-## Status - Late Alpha
+## Torgap Repos
 
-` $projectname`  is currently under active development and in the late alpha testing phase. It should not be used for production tasks until it has had further testing and auditing.
+### Quick Connect
+
+Quick Connect is a service that creates a Torgap link between a Gordian Wallet and a full node.
+
+* **[QuickConnect API](https://github.com/BlockchainCommons/Gordian/blob/master/Docs/Quick-Connect-API.md) \(specification\).** Connectivity specs.
+
+We hope to extend the QuickConnect API to include links for Bitcoin mainnet, testnet, and signet, as well as Lightning and SpotBit, as early demos of the capability.
+
+### Gordian Server
+
+Networked Gordian services and microservices connect to the Gordian Wallet via Torgaps.
+
+* **[Gordian](https://github.com/BlockchainCommons/Gordian) \(wallet services\).** A walet system built around a Torgap between the Gordian Wallet and Gordian Server.
+* **[spotBit](https://github.com/BlockchainCommons/spotbit) \(online server\).** A Bitcoin pricing microservice.
+
+### Torgap Onion Repos
+
+Torgap Onion is an experiment that combines `minisig` ECC25519 keys with Tor to enable `did:onion` DID and VC services over a a Torgap.
+
+* **[torgap-demo](https://github.com/BlockchainCommons/torgap-demo) \(CLI demo\).** A demonstration of how `torgap-sig-cli-rust` can be used to verify a signature using an onion service.
+* **[torgap-sig](https://github.com/BlockchainCommons/torgap-sig) \(Rust library\).** A fork of `rust-minisig` with support for Tor onion v3, testbedding `did:onion`, which enables DID and VCs lookups via a Torgap.
+* **[torgap-sig-cli-rust](https://github.com/BlockchainCommons/torgap-sig-cli-rust) \(CLI tool\).** A fork of `rsign2` with support for Tor onion v3, with support for Tor onion v3, testbedding `did:onion`, which enables DID and VCs lookups via a Torgap.
+
+## Status - Varied
+
+Please see individual repos for status.
 
 ## Origin, Authors, Copyright & Licenses
 
@@ -23,24 +48,6 @@ This table below also establishes provenance (repository of origin, permalink, a
 | File      | From                                                         | Commit                                                       | Authors & Copyright (c)                                | License                                                     |
 | --------- | ------------------------------------------------------------ | ------------------------------------------------------------ | ------------------------------------------------------ | ----------------------------------------------------------- |
 | exception-to-the-rule.c or exception-folder | [https://github.com/community/repo-name/PERMALINK](https://github.com/community/repo-name/PERMALINK) | [https://github.com/community/repo-name/commit/COMMITHASH]() | 2020 Exception Author  | [MIT](https://spdx.org/licenses/MIT)                        |
-
-### Dependencies
-
-To build  `$projectname` you'll need to use the following tools:
-
-- autotools - Gnu Build System from Free Software Foundation ([intro](https://www.gnu.org/software/automake/manual/html_node/Autotools-Introduction.html)).
-
-### Derived from…
-
-This  `$projectname` project is either derived from or was inspired by:
-
-- [community/repo-name/](https://github.com/community/repo-name) — Repo that does what, by [developer](https://github.com/developer)  or from  [community](https://community.com).
-
-### Used with…
-
-These are other projects that work with or leverage `$projectname`:
-
-- [community/repo-name/](https://github.com/community/repo-name) — Repo that does what, by [developer](https://github.com/developer)  or from  [community](https://community.com).
 
 ## Financial Support
 
