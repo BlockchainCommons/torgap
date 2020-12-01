@@ -1,5 +1,5 @@
 # Blockchain Commons Torgap
-![](images/logos/torgap.png)
+<img src="images/logos/torgap.png" align="right">
 
 **Torgap** is the Blockchain Commons architecture model for creating gaps between connected apps and microservices to support privacy, non-correlation, and censorship-resistance. 
 
