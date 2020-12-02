@@ -1,5 +1,5 @@
 # Torgap FAQ
-<img src="images/logos/torgap.png" align="right">
+<img src="../images/logos/torgap.png" align="right">
 
 ## Torgap Overview
 
