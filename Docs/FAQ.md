@@ -79,14 +79,21 @@ The ultimate goal os the Torgap architecture is to separate keys and processes i
 
 ### How is Torgap Used in the Gordian System?
 
+Currently, there are two Torgaps in the Gordian system, as shown in the app map, above. The mobile Gordian Wallet and the full-node Gordian Server are connected by a Torgap. There is also a Torgap between the Gordian Wallet and our first microservice, the Spotbit pricing server.
+
 ### What is QuickConnect?
 
+The QuickConnect API is a simple specification for linking a Bitcoin hidden service with a wallet client using a URL and an associated scannable QR code. It's used in the Gordian system to create the Torgap between the Gordian Wallet and a full node such as the Gordian Server.
+
 ### What Are the Advantages of Using Torgap in Gordian?
+
+Creating a Torgap between your Wallet and your full-node ensures that no one can see that you're interacting with the Bitcoin network. It also helps to protect your keys: the Gordian system secures your bitcoins with a 2-of-3 multi-sig, with one key on your server and one in your wallet. Thanks to the non-correlation of Torgaps, finding one key tells an attacker nothing about where the other key is located.
+
+Tor has traditionally ben an underused option for Bitcoin, but an option nonetheless: it's built into Bitcoin Core. However, the same can't be said for other Bitcoin services. In particular, pricing services were a strong vulnerability because there was no easy way to look up Bitcoin prices via Tor. The Torgap to Spotbit introduces that possibility for the first time, ensuring the total _service anonymity_ of your Bitcoin usage.
 
 ### How is Torgap Used with DIDs & VCs?
 
 ### What are the Advantages of Using Torgap with DIDs & VCs?
-
 
 ## Torgap Futures
 
