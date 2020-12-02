@@ -93,8 +93,16 @@ Tor has traditionally ben an underused option for Bitcoin, but an option nonethe
 
 ### How is Torgap Used with DIDs & VCs?
 
+Blockchain Commons is experimenting with the "did:onion" DID method. See the [torgap-sig-cli repo](https://github.com/BlockchainCommons/torgap-sig-cli-rust) for more information. It uses Tor as a DID resolution method, allowing DIDs and Verifiable Claims to be referenced pseudonymously through a Torgap.
+
 ### What are the Advantages of Using Torgap with DIDs & VCs?
+
+Using DIDs and VCs allows everyone to be pseudonymous. Someone can own a public, networked DID without there being any clue as to who they are. Similarly, someone can make Verifiable Claims without revealing their identity. However, the most important gains may come for the end-user. They can look up DIDs and Verifiable Claims without revealing who they are. This is a big change from the un-gapped world: before, anyone could see that you were interested in verifying a signature or referencing a claim, possibly revealing information aobut who you are and what you're planning to do; now, you can do so without revealing that information.
 
 ## Torgap Futures
 
 ### What is the Future of Torgap?
+
+Torgaps can be used anywhere that it's useful to partition off a service. Doing so will accumulate the privacy, security, and non-correlation advantages implicit in the architectural design.
+
+Blockchain Commons will be continuing its experiments with `did:onion` and we'll also be investigating new possibilities, such as accessing Lightning using Torgaps and linking other microservices to the Gordian Wallet.
