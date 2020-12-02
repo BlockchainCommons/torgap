@@ -1,6 +1,13 @@
 # Torgap FAQ
 <img src="../images/logos/torgap.png" align="right">
 
+## Table of Contents
+
+* [Tor Overview](#tor-overview)
+* [Torgap Overview](#torgap-overview)
+* [Torgap Services](#torgap-services)
+* [Torgap Futures](#torgap-futures)
+
 ## Tor Overview
 
 ### What is the Tor Protocol?
