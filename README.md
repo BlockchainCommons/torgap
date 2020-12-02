@@ -1,6 +1,6 @@
 # Blockchain Commons Torgap
 
-![](images/logos/torgap-screne.jpg)
+![](images/logos/torgap-screen.jpg)
 
 <img src="images/logos/torgap.png" align="right">
 
