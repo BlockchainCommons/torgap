@@ -108,6 +108,6 @@ More privacy. Using DIDs and VCs allows everyone to be pseudonymous. Someone can
 
 ### What is the Future of Torgap?
 
-Torgaps can be used anywhere it's useful to partition off a service. Doing so will accumulate the privacy, security, and non-correlation advantages implicit in the architectural design.
+Torgaps can be used anywhere it's useful to partition off a service. Doing so will accumulate the privacy, security, and non-correlation advantages implicitly in the architectural design.
 
 In the future, Blockchain Commons will continue its experiments with `did:onion` and will also be investigating new possibilities, such as accessing _Lightning Network_ using Torgaps and linking other microservices to the Gordian Wallet.
