@@ -1,6 +1,6 @@
 # Blockchain Commons Torgap
 
-### _by Christopher Allen and Gorazd Kovacic_
+### _by [Christopher Allen](@ChristopherA), [Peter Denton](@fonta1n3), and [Gorazd Kovacic](@gorazdko)_
 
 ![](images/logos/torgap-screen.jpg)
 
