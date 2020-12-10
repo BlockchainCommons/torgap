@@ -47,7 +47,7 @@ Networked Gordian services and microservices connect to the Gordian Wallet via T
 
 Torgap Onion is an experiment that combines `minisig` Ed25519 keys with Tor to enable `did:onion` DID and VC services over a a Torgap.
 
-* **[torgap-demo](https://github.com/BlockchainCommons/torgap-demo) \(CLI demo\).** A demonstration of how `torgap-sig-cli-rust` can be used to verify a signature using an onion service.
+* **[torgap-demo](https://github.com/BlockchainCommons/torgap-demo) \(CLI demo\).** A live demonstration of how `torgap-sig-cli-rust` can be used to verify a signature using an onion service (our demo at [http://fscst5exmlmr262byztwz4kzhggjlzumvc2ndvgytzoucr2tkgxf7mid.onion/](http://fscst5exmlmr262byztwz4kzhggjlzumvc2ndvgytzoucr2tkgxf7mid.onion/), and for a simple onion based DID (Decentralized Identifier) Document [http://fscst5exmlmr262byztwz4kzhggjlzumvc2ndvgytzoucr2tkgxf7mid.onion/.well-known/did.json](http://fscst5exmlmr262byztwz4kzhggjlzumvc2ndvgytzoucr2tkgxf7mid.onion/.well-known/did.json).
 * **[torgap-sig](https://github.com/BlockchainCommons/torgap-sig) \(Rust library\).** A fork of `rust-minisig` with support for Tor onion v3, testbedding `did:onion`, which enables DID and VCs lookups via a Torgap.
 * **[torgap-sig-cli-rust](https://github.com/BlockchainCommons/torgap-sig-cli-rust) \(CLI tool\).** A fork of `rsign2` with support for Tor onion v3, with support for Tor onion v3, testbedding `did:onion`, which enables DID and VCs lookups via a Torgap.
 
