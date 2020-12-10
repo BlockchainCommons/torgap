@@ -28,11 +28,13 @@ The following files contain…
 
 ### Quick Connect
 
-Quick Connect is a service that creates a Torgap link between a Gordian Wallet and a full node.
+Quick Connect 1.0 is a specification that uses a QR-code to establish a Torgap link between a Gordian Wallet and a Bitcoin full node.
 
-* **[QuickConnect API](https://github.com/BlockchainCommons/Gordian/blob/master/Docs/Quick-Connect-API.md) \(specification\).** Connectivity specs.
+* **[Quick Connect 1.0 API](https://github.com/BlockchainCommons/Gordian/blob/master/Docs/Quick-Connect-API.md) \(specification\).** Connectivity specs.
 
-We hope to extend the QuickConnect API to include links for Bitcoin mainnet, testnet, and signet, as well as Lightning and SpotBit, as early demos of the capability.
+We hope to extend the QuickConnect in version 2.0 to support links for multiple services in one QR code, to allow for multiple services like Bitcoin mainnet, testnet, and signet, as well as Lightning and SpotBit, as early demos of the capapabilities offered by Quick Connect 2.0's. A discussion in the requirements for version 2.0 are in progress:
+
+* **[Quick Connect 2.0 Requirements](https://github.com/BlockchainCommons/Airgapped-Wallet-Community/discussions)
 
 ### Gordian Server
 
