@@ -8,6 +8,16 @@
 
 **Torgap** is the Blockchain Commons architecture model for creating gaps between connected apps and microservices to support privacy, non-correlation, and censorship-resistance. 
 
+## Example of Torgap Use
+
+Here are the 2 Torgaps and 3 Airgaps in the current [Gordian](https://github.com/BlockchainCommons/Gordian) architecture:
+
+<img src="https://raw.githubusercontent.com/BlockchainCommons/Gordian/master/Images/appmap.jpg" width="500" />
+
+In this example:
+* The remote iOS [Gordian Wallet](https://github.com/blockchainCommons/gordianwallet-ios) app talks to Mac [Gordian Server] bitcoin full-node located at home, for confirming bitcoin transactions.
+* The remote iOS [Gordian Wallet](https://github.com/blockchainCommons/gordianwallet-ios) app seperately talks to a [Spotbit](https://github.com/BlockchainCommons/spotbit) server in the cloud for aggregating bitcoin price information.
+
 ## Additional Information
 
 The following files contain…
