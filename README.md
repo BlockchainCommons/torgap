@@ -50,6 +50,7 @@ Torgap Onion is an experiment that combines `minisig` Ed25519 keys with Tor to e
 * **[torgap-demo](https://github.com/BlockchainCommons/torgap-demo) \(CLI demo\).** A demonstration of how `torgap-sig-cli-rust` can be used to verify a signature using an onion service, and offer a DID document.
   * **Live demo** [http://fscst5exmlmr262byztwz4kzhggjlzumvc2ndvgytzoucr2tkgxf7mid.onion/](http://fscst5exmlmr262byztwz4kzhggjlzumvc2ndvgytzoucr2tkgxf7mid.onion/)
   * **Simple onion-based [W3C DID](https://www.w3.org/TR/did-core/) (Decentralized Identifier) Document** [http://fscst5exmlmr262byztwz4kzhggjlzumvc2ndvgytzoucr2tkgxf7mid.onion/.well-known/did.json](http://fscst5exmlmr262byztwz4kzhggjlzumvc2ndvgytzoucr2tkgxf7mid.onion/.well-known/did.json).
+  * **Linode Stackscript** A [Linode](https://www.linode.com/?r=23211828bc517e2cb36e0ca81b91cc8c0e1b2d96) installer [script](https://github.com/BlockchainCommons/torgap-demo/blob/master/StackScript/torgap-demo.sh) to automate installation of your own demo server and DID document using your own torgap keys.
 * **[torgap-sig](https://github.com/BlockchainCommons/torgap-sig) \(Rust library\).** A fork of `rust-minisig` with support for Tor onion v3, testbedding `did:onion`, which enables DID and VCs lookups via a Torgap.
 * **[torgap-sig-cli-rust](https://github.com/BlockchainCommons/torgap-sig-cli-rust) \(CLI tool\).** A fork of `rsign2` with support for Tor onion v3, with support for Tor onion v3, testbedding `did:onion`, which enables DID and VCs lookups via a Torgap.
 
