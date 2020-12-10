@@ -6,7 +6,7 @@
 
 <img src="images/logos/torgap.png" align="right">
 
-**Torgap** is the [Blockchain Commons](https://www.BlockchainCommons.com) architecture model for creating gaps between connected apps and microservices to support privacy, non-correlation, and censorship-resistance. 
+**Torgap** is the [Blockchain Commons](https://www.BlockchainCommons.com) architecture model for creating gaps between connected apps and microservices to support privacy, non-correlation, censorship-resistance, seperation-of-failure, and seperation-of interests.
 
 ## Example of Torgap Use
 
