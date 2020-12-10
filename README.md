@@ -32,9 +32,9 @@ Quick Connect 1.0 is a specification that uses a QR-code to establish a Torgap l
 
 * **[Quick Connect 1.0 API](https://github.com/BlockchainCommons/Gordian/blob/master/Docs/Quick-Connect-API.md) \(specification\).** Connectivity specs.
 
-We hope to extend the QuickConnect in version 2.0 to support links for multiple services in one QR code, to allow for multiple services like Bitcoin mainnet, testnet, and signet, as well as Lightning and SpotBit, as early demos of the capapabilities offered by Quick Connect 2.0's. A discussion in the requirements for version 2.0 are in progress:
+We hope to extend the QuickConnect in version 2.0 to support links for multiple services in one QR code, to allow for multiple services like Bitcoin mainnet, testnet, and signet, as well as Lightning and SpotBit, as early demos of the capapabilities offered by Quick Connect 2.0's. This spec is in progress:
 
-* **[Quick Connect 2.0 Requirements](https://github.com/BlockchainCommons/Airgapped-Wallet-Community/discussions)
+* **[Quick Connect 2.0 Requirements](https://github.com/BlockchainCommons/Airgapped-Wallet-Community/discussions)** Discussion.
 
 ### Gordian Server
 
