@@ -33,7 +33,7 @@ Networked Gordian services and microservices connect to the Gordian Wallet via T
 
 ### Torgap Onion Repos
 
-Torgap Onion is an experiment that combines `minisig` ECC25519 keys with Tor to enable `did:onion` DID and VC services over a a Torgap.
+Torgap Onion is an experiment that combines `minisig` Ed25519 keys with Tor to enable `did:onion` DID and VC services over a a Torgap.
 
 * **[torgap-demo](https://github.com/BlockchainCommons/torgap-demo) \(CLI demo\).** A demonstration of how `torgap-sig-cli-rust` can be used to verify a signature using an onion service.
 * **[torgap-sig](https://github.com/BlockchainCommons/torgap-sig) \(Rust library\).** A fork of `rust-minisig` with support for Tor onion v3, testbedding `did:onion`, which enables DID and VCs lookups via a Torgap.
