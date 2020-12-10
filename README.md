@@ -15,8 +15,8 @@ Here are the 2 Torgaps and 3 Airgaps in the current [Gordian](https://github.com
 <img src="https://raw.githubusercontent.com/BlockchainCommons/Gordian/master/Images/appmap.jpg" width="500" />
 
 In this example:
-* The remote iOS [Gordian Wallet](https://github.com/blockchainCommons/gordianwallet-ios) app talks to Mac [Gordian Server] bitcoin full-node located at home, for confirming bitcoin transactions.
-* The remote iOS [Gordian Wallet](https://github.com/blockchainCommons/gordianwallet-ios) app seperately talks to a [Spotbit](https://github.com/BlockchainCommons/spotbit) server in the cloud for aggregating bitcoin price information.
+* The remote iOS [Gordian Wallet](https://github.com/blockchainCommons/gordianwallet-ios) app talks to Mac [Gordian Server](https://github.com/BlockchainCommons/GordianServer-macOS) bitcoin full-node located at home, for confirming bitcoin transactions.
+* The remote iOS [Gordian Wallet](https://github.com/blockchainCommons/gordianwallet-ios) app seperately talks to a Linux [Spotbit](https://github.com/BlockchainCommons/spotbit) server in the cloud, for aggregating bitcoin price information.
 
 ## Additional Information
 
