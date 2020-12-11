@@ -125,6 +125,7 @@ Blockchain Commons plans to investigate a number of other examples of Torgap-bas
 * 2FA & Multisig Agents
 * Sharded Key Storage
 * Secure Chat & Forwarding Services
+* DID Resolution Services for other DID methods
 * Paid Data Services (possibly throug Lightning-based LSATs)
 * Confidential Data Stores
 
