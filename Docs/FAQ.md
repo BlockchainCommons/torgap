@@ -114,6 +114,20 @@ Example: Most other data verification architectures (and some other DID methods)
 
 ### What is the Future of Torgap?
 
-Torgaps can be used anywhere it's useful to partition off a service. Doing so will accumulate the privacy, security, and non-correlation advantages implicitly in the architectural design.
+Torgaps can be used anywhere it's useful to partition off a service. Doing so will accumulate the privacy, security, and non-correlation advantages implicitly in this architectural approach, but Torgaps can also support impoved seperation-of-interests, and partition off single points of failure.
 
-In the future, Blockchain Commons will continue its experiments with `did:onion` and will also be investigating new possibilities, such as accessing _Lightning Network_ using Torgaps and linking other microservices to the Gordian Wallet.
+Blockchain Commons plans to investigate a number of other examples of Torgap-based microservices. In addition to existing Torgaps between Bitcoin wallets & full-nodes (Quick Connect), and our Bitcoin Wallet and price discovery (SpotBit), these are just some of the early ideas for
+
+* Lightning Network (C-Lighting & LND)
+* Blockchain Explorers (in particular Esplora for Bitcoin)
+* Transaction Coordinators
+* Coinjoin & Cryptocurrency Privacy Services
+* 2FA & Multisig Agents
+* Sharded Key Storage
+* Secure Chat & Forwarding Services
+* Paid Data Services (possibly throug Lightning-based LSATs)
+* Confidential Data Stores
+
+If you have other ideas for how to use a Torgap, join in the discussion in the [Airgapped Wallet Community](https://github.com/BlockchainCommons/Airgapped-Wallet-Community/discussions/34).
+
+If you'd like to see these future projects come to life, we need your support. We are funded entirely by patronage, donations, and collaborative partnerships with people like you. Please consider becoming a [GitHub Sponsor](https://github.com/sponsors/BlockchainCommons) or by making a donation at btcpay.blockchaincommons.com.
