@@ -98,11 +98,17 @@ Tor has traditionally been an underused option for Bitcoin, but a usefull option
 
 ### How is Torgap Used with DIDs & VCs?
 
-Blockchain Commons is experimenting with the "did:onion" DID method. See the [torgap-sig-cli repo](https://github.com/BlockchainCommons/torgap-sig-cli-rust) for more information. It uses Tor as a DID resolution method, allowing DIDs and Verifiable Claims to be referenced pseudonymously through a Torgap.
+Blockchain Commons is experimenting with a provisional `did:onion` [DID method](https://github.com/blockchainCommons/did-method-onion). This DID method uses the [W3C Decentralized Identifiers (DIDs) 1.0](https://www.w3.org/TR/did-core/) and [W3C Verifiable Credentials (VC) Data Model 1.0](https://www.w3.org/TR/vc-data-model/) standards to allow holders of credentials & claims to reference, resolve and retrieve a DID documents anonymously through a Torgap. These can then be used to verify those credentials, other claims (such as reviews), as well as future sophisticated objects such as authorization capability tokens.
+
+See the [torgap-sig-cli repo](https://github.com/BlockchainCommons/torgap-sig-cli-rust) for more information about our research.
 
 ### What are the Advantages of Using Torgap with DIDs & VCs?
 
-More privacy. Using DIDs and VCs allows everyone to be pseudonymous. Someone can own a public, networked DID without there being any hint as to who they are. Similarly, someone can make Verifiable Claims without revealing their identity. However, the most important gains may come for the end-user. They can look up DIDs and Verifiable Claims without revealing who they are. This is a big change from the _un-gapped_ world: before, authorities could see that you were interested in verifying a signature or referencing a claim, possibly revealing information about who you are and what you're planning to do; now, you can do so without revealing that information.
+More privacy. Using DIDs and VCs allows everyone to be pseudonymous. Someone can own a public, networked DID without there being any hint as to who they are. Similarly, someone can make Verifiable Claims without revealing their identity.
+
+However, the most important gains may come for the end-user. They can look up DIDs and Verifiable Claims without revealing who they are. This is a big change from the _un-gapped_ world: before, authorities could see that you were interested in verifying a signature or referencing a claim, possibly revealing information about who you are and what you're planning to do; now, you can do so without revealing that information.
+
+Example: Most other data verification architectures (and some other DID methods) suffer from a "phone home" problem where holders of data needing verification of data, and then reveal their interest in that data. For instance, after the recent Apple Big Sur OS release, it was [revealed](https://sneak.berlin/20201112/your-computer-isnt-yours/) that your Mac communicates with Apple whenever you open a new app. This addresses a legitimate need for Apple to ban malicious applications and developers. However, this request reveals that you have attempted to install an app by that developer. Using `did:onion` the party requesting validation of an app would not be correlatable with the device or user requesting it.
 
 ## Torgap Futures
 
