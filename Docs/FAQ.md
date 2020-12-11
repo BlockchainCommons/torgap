@@ -88,7 +88,7 @@ Currently, there are two Torgaps in the [Gordian system](https://github.com/Bloc
 
 ### What is QuickConnect?
 
-The QuickConnect API is a simple specification for linking a Bitcoin hidden service with a wallet client using a URL and an associated scannable QR code. It's used in the Gordian system to create the Torgap between the Gordian Wallet and a full node such as the Gordian Server.
+The [QuickConnect 1.0 API](https://github.com/BlockchainCommons/Gordian/blob/master/Docs/Quick-Connect-API.md) is a simple specification for linking a Bitcoin hidden service with a wallet client using a URL and an associated scannable QR code. It's used in the Gordian system to create the Torgap between the Gordian Wallet and a full node such as the Gordian Server. A more generalized Quick Connect 2.0 is being [discussed](https://github.com/BlockchainCommons/Airgapped-Wallet-Community/discussions/33).
 
 ### What Are the Advantages of Using Torgap in the Gordian System?
 
