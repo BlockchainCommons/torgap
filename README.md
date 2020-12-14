@@ -54,6 +54,8 @@ Torgap Onion is an experiment that combines `minisig` Ed25519 keys with Tor to e
 * **[torgap-sig](https://github.com/BlockchainCommons/torgap-sig) \(Rust library\).** A fork of `rust-minisig` with support for Tor onion v3, testbedding `did:onion`, which enables DID and VCs lookups via a Torgap.
 * **[torgap-sig-cli-rust](https://github.com/BlockchainCommons/torgap-sig-cli-rust) \(CLI tool\).** A fork of `rsign2` with support for Tor onion v3, with support for Tor onion v3, testbedding `did:onion:*`, which enables DID and VCs lookups via a Torgap.
 * **[did-method-method](https://github.com/BlockchainCommons/did-method-onion)** A very preliminary [DID](https://www.w3.org/TR/did-core/) Method `did:onion:*` for using Tor onion transport and keys for the emerging [W3C Decentralized Identifier 1.0](https://www.w3.org/TR/did-core/) and [W3C Verifiable Credentials (VC) Data Model 1.0 ](https://www.w3.org/TR/vc-data-model/) standards.
+* **[torgap-opentimestamps](https://github.com/BlockchainCommons/torgap-opentimestamps) \(Linode Stackscript\).** A [Linode](https://www.linode.com/?r=23211828bc517e2cb36e0ca81b91cc8c0e1b2d96) installer [script](https://github.com/BlockchainCommons/torgap-opentimestamps/blob/master/StackScript/torgap-opentimestamps.sh) to automate installation of OpenTimestamps (optionally with a Bitcoin full node verification) behind an onion service
+  * **Live demo** [http://3xcaaswwserqnox56z7d7wifwyxm2jsdv4fniffym5jwncqx3qr7uzid.onion/]()
 
 ## Status - Varied
 
