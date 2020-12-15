@@ -12,7 +12,7 @@
 
 ### What is the Tor Protocol?
 
-Tor is short for "The Onion Router". It's a protocol that allows for the anonymous access of internet services: users submit and receive data from [`hidden services`](##what-is-a-hidden-service), with that data being encrypted multiple times and routed through multiple Tor servers. As a result, the data is protected from exposure and both the client and the server enjoy strong pseudonymity.
+Tor is short for "The Onion Router". It's a protocol that allows for the anonymous access of internet services: users submit and receive data from [`hidden services`](#what-is-a-hidden-service), with that data being encrypted multiple times and routed through multiple Tor servers. As a result, the data is protected from exposure and both the client and the server enjoy strong pseudonymity.
 
 ### What is the Tor Browser?
 
@@ -28,13 +28,11 @@ Client authorization is a feature added with Tor v3. It uses public-key cryptogr
 
 ### What are the Advantages of Tor?
 
-Tor is often used for its _identity pseudonymity_ : a client doesn't know who or what a server is, other than its onion address, and the converse is also true. This thwarts surveillance and enables privacy for the user. 
+Tor is often used for its _identity pseudonymity_ : a client doesn't know who or what a server is, other than its onion address, and the converse is also true. This thwarts surveillance and enables privacy for the user. For users of the Tor browser, this means that web sites don't know who they are, and users don't know where a web site is. Perhaps more importantly, third-party eavesdroppers can't see what site the end-user is accessing. For users of other Tor hidden services, again the server can't track the user and the user can't track the server. There is also strong _service anonymity_: third parties can't even see what services are being accessed, whereas the open internet would reveal that, even on an encrypted connection.
 
-For users of the Tor browser, this means that web sites don't know who they are, and users don't know where a web site is. Perhaps more importantly, third-party eavesdroppers can't see what site the end-user is accessing.
+In addition, there are strong _non-correlation_ advantages. Web sites protected by Tor are all segregated, meaning that a user can't be tracked from one site to another, as occurs on the public web using cookies and/or IP addresses. Similarly, the usage of other hidden services can't be connected to each other. This non-correlation can also support _security_ and _censorship resistance_, though those require a largely Tor-focused architecture, as is being created by Blockchain Commons.
 
-For users of other Tor hidden services, again the server can't track the user and the user can't track the server. There is also strong _service anonymity_: third parties can't even see what services are being accessed, whereas the open internet would reveal that, even on an encrypted connection.
-
-In addition, there are strong _non-correlation_ advantages. Web sites protected by Tor are all segregated, meaning that a user can't be tracked from one site to another, as occurs on the public web using cookies and/or IP addresses. Similarly, the uage of other hidden services can't be connected to each other. This non-correlation can also support _security_, though that requires a largely Tor-focused architecture, as is being created by Blockchain Commons.
+Finally, the segregation of Torgapped services also creates a _separation of interests_: different keys and other information is maintained at different locations, reducing honeypots on the internet. It also leads to _reduced single points-of-failure_. 
 
 ### How Does Blockchain Commons Use Tor?
 
@@ -72,9 +70,9 @@ The biggest advantage of the Torgap architecture comes from _service anonymity_.
 
 The Torgap architecture is also able to leverage new _security_ in several ways.
 
-To start with, the Torgap architecture leaves behind the legacy security of _certs_ and _cert authorities_, instead utilizing the security of Tor itself. This removes the threat of compromised (or malicious) authorities and also improves the archiecture's non-correlation: now, attackers can't even correlate your usage of certificates on the internet.
+To start with, the Torgap architecture leaves behind the legacy security of certs and cert authorities, instead utilizing the security of Tor itself. This removes the threat of compromised (or malicious) authorities and also improves the archiecture's _non-correlation_: now, attackers can't even correlate your usage of certificates on the internet.
 
-In addition, because the Torgap architecture is built upon maps of isolated microservices, there are no large honeypots in the system. The imaginary fall of an individual service, like a SpotBit service, will reveal very limited information about the digital-asset system as a whole.
+In addition, because the Torgap architecture is built upon maps of isolated microservices, there are no large honeypots in the system thanks to _separation of interests_. The theoretical fall of an individual service, like a SpotBit service, will reveal very limited information about the digital-asset system as a whole.
 
 The _non-correlation_ itself is also a large advantage: no one knows who anyone else is, nor what else they're doing (with the exception of a user's Gordian Wallet, which is physically secured). This means that attacks on individual services reveal nothing about the system as a whole, nor how it connects up.
 
@@ -94,29 +92,27 @@ The [QuickConnect 1.0 API](https://github.com/BlockchainCommons/Gordian/blob/mas
 
 Creating a Torgap between your Wallet and your full-node ensures that no one can see that you're interacting with the Bitcoin network. It also helps to protect your keys: the Gordian system secures your bitcoins with a 2-of-3 multi-sig, with one key on your server and one in your wallet. Thanks to the non-correlation of Torgaps, finding one key tells an attacker nothing about where the other key is located.
 
-Tor has traditionally been an underused option for Bitcoin, but a usefull option nonetheless: it's built into Bitcoin Core. However, the same can't be said for other Bitcoin services. In particular, pricing services have long been a vulnerability because there was no easy way to look up Bitcoin prices via Tor. The Torgap to Spotbit introduces that possibility for the first time, ensuring the total _service anonymity_ of your Bitcoin usage.
+Tor has traditionally been an underused option for Bitcoin, but a useful option nonetheless: it's built into Bitcoin Core. However, the same can't be said for other Bitcoin services. In particular, pricing services have long been a vulnerability because there was no easy way to look up Bitcoin prices via Tor. The Torgap to Spotbit introduces that possibility for the first time, ensuring the total _service anonymity_ of your Bitcoin usage.
 
 ### How is Torgap Used with DIDs & VCs?
 
-Blockchain Commons is experimenting with a provisional `did:onion` [DID method](https://github.com/blockchainCommons/did-method-onion). This DID method uses the [W3C Decentralized Identifiers (DIDs) 1.0](https://www.w3.org/TR/did-core/) and [W3C Verifiable Credentials (VC) Data Model 1.0](https://www.w3.org/TR/vc-data-model/) standards to allow holders of credentials & claims to reference, resolve and retrieve a DID documents anonymously through a Torgap. These can then be used to verify those credentials, other claims (such as reviews), as well as future sophisticated objects such as authorization capability tokens.
+Blockchain Commons is experimenting with a provisional `did:onion` [DID method](https://github.com/blockchainCommons/did-method-onion). This DID method uses the [W3C Decentralized Identifiers (DIDs) 1.0](https://www.w3.org/TR/did-core/) and [W3C Verifiable Credentials (VC) Data Model 1.0](https://www.w3.org/TR/vc-data-model/) standards to allow holders of credentials and claims to reference, resolve, and retrieve a DID documents anonymously through a Torgap. These can then be used to verify those credentials or other claims (such as reviews) as well as to verify future sophisticated objects such as authorization capability tokens.
 
 See the [torgap-sig-cli repo](https://github.com/BlockchainCommons/torgap-sig-cli-rust) for more information about our research.
 
 ### What are the Advantages of Using Torgap with DIDs & VCs?
 
-More privacy. Using DIDs and VCs allows everyone to be pseudonymous. Someone can own a public, networked DID without there being any hint as to who they are. Similarly, someone can make Verifiable Claims without revealing their identity.
+More privacy. Using Torgaps for DIDs and VCs allows everyone to be pseudonymous. Someone can own a public, networked DID without there being any hint as to who they are. Similarly, someone can make Verifiable Claims without revealing their identity.
 
 However, the most important gains may come for the end-user. They can look up DIDs and Verifiable Claims without revealing who they are. This is a big change from the _un-gapped_ world: before, authorities could see that you were interested in verifying a signature or referencing a claim, possibly revealing information about who you are and what you're planning to do; now, you can do so without revealing that information.
 
-Example: Most other data verification architectures (and some other DID methods) suffer from a "phone home" problem where holders of data needing verification of data, and then reveal their interest in that data. For instance, after the recent Apple Big Sur OS release, it was [revealed](https://sneak.berlin/20201112/your-computer-isnt-yours/) that your Mac communicates with Apple whenever you open a new app. This addresses a legitimate need for Apple to ban malicious applications and developers. However, this request reveals that you have attempted to install an app by that developer. Using `did:onion` the party requesting validation of an app would not be correlatable with the device or user requesting it.
+**Example:** Most other data-verification architectures (and some other DID methods) suffer from a "phone home" problem where holders of data needing verification of data reveal their interest in that data. For instance, following the Big Sur MacOS release, it was [revealed](https://sneak.berlin/20201112/your-computer-isnt-yours/) that each Mac communicates with Apple whenever it opens a new app. This addresses a legitimate need for Apple to ban malicious applications and developers. However, the request reveals that you have attempted to install an app by that developer. Using `did:onion` the party requesting validation of an app would not be correlatable with the device or user requesting it.
 
 ## Torgap Futures
 
 ### What is the Future of Torgap?
 
-Torgaps can be used anywhere it's useful to partition off a service. Doing so will accumulate the privacy, security, and non-correlation advantages implicitly in this architectural approach, but Torgaps can also support impoved seperation-of-interests, and partition off single points of failure.
-
-Blockchain Commons plans to investigate a number of other examples of Torgap-based microservices. In addition to existing Torgaps between Bitcoin wallets & full-nodes (Quick Connect), and our Bitcoin Wallet and price discovery (SpotBit), these are just some of the early ideas for
+Blockchain Commons plans to investigate a number of other examples of Torgap-based microservices. In addition to existing Torgaps between Bitcoin wallets & full-nodes (Quick Connect) and the Gordian Wallet and its price discovery tool (SpotBit), we are also researching potential Torgaps for:
 
 * Lightning Network (C-Lighting & LND)
 * Blockchain Explorers (in particular Esplora for Bitcoin)
@@ -128,6 +124,8 @@ Blockchain Commons plans to investigate a number of other examples of Torgap-bas
 * DID Resolution Services for other DID methods
 * Paid Data Services (possibly throug Lightning-based LSATs)
 * Confidential Data Stores
+
+Torgaps can be used anywhere that it's useful to partition off a service. Doing so will accumulate the privacy, security, and non-correlation advantages implicit in this architectural approach, as well as supporting impoved seperation-of-interests and partitioning off single-points-of-failure.
 
 If you have other ideas for how to use a Torgap, join in the discussion in the [Airgapped Wallet Community](https://github.com/BlockchainCommons/Airgapped-Wallet-Community/discussions/34).
 
