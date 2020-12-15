@@ -54,7 +54,13 @@ Torgap Onion is an experiment that combines `minisig` Ed25519 keys with Tor to e
   * **Linode Stackscript** A [Linode](https://www.linode.com/?r=23211828bc517e2cb36e0ca81b91cc8c0e1b2d96) installer [script](https://github.com/BlockchainCommons/torgap-demo/blob/master/StackScript/torgap-demo.sh) to automate installation of your own demo server and DID document using your own torgap keys.
 * **[torgap-sig](https://github.com/BlockchainCommons/torgap-sig) \(Rust library\).** A fork of `rust-minisig` with support for Tor onion v3, testbedding `did:onion`, which enables DID and VCs lookups via a Torgap.
 * **[torgap-sig-cli-rust](https://github.com/BlockchainCommons/torgap-sig-cli-rust) \(CLI tool\).** A fork of `rsign2` with support for Tor onion v3, with support for Tor onion v3, testbedding `did:onion:*`, which enables DID and VCs lookups via a Torgap.
-* **[did-method-method](https://github.com/BlockchainCommons/did-method-onion)** A very preliminary [DID](https://www.w3.org/TR/did-core/) Method `did:onion:*` for using Tor onion transport and keys for the emerging [W3C Decentralized Identifier 1.0](https://www.w3.org/TR/did-core/) and [W3C Verifiable Credentials (VC) Data Model 1.0 ](https://www.w3.org/TR/vc-data-model/) standards.
+* **[did-method-onion](https://github.com/BlockchainCommons/did-method-onion)** A very preliminary [DID](https://www.w3.org/TR/did-core/) Method `did:onion:*` for using Tor onion transport and keys for the emerging [W3C Decentralized Identifier 1.0](https://www.w3.org/TR/did-core/) and [W3C Verifiable Credentials (VC) Data Model 1.0 ](https://www.w3.org/TR/vc-data-model/) standards.
+
+### Torgap Timestamps
+
+Torgap Timestamps allows for OpenTimestamping run as a Tor Onion service.
+
+* **[torgap-opentimestamps](https://github.com/BlockchainCommons/torgap-opentimestamps/blob/master/README.md).** StackScript installation for the Torgapped Open Timestamps.
 
 ## Status - Varied
 
