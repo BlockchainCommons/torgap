@@ -10,13 +10,13 @@
 
 ## Example of Torgap Use
 
-Here are the 2 Torgaps and 3 Airgaps in the current [Gordian](https://github.com/BlockchainCommons/Gordian) architecture:
+There are two Torgaps and three Airgaps in the current [Gordian](https://github.com/BlockchainCommons/Gordian) architecture:
 
 <img src="https://raw.githubusercontent.com/BlockchainCommons/Gordian/master/Images/appmap.jpg" width="500" />
 
 In this example:
-* The remote iOS [Gordian Wallet](https://github.com/blockchainCommons/gordianwallet-ios) app talks to Mac [Gordian Server](https://github.com/BlockchainCommons/GordianServer-macOS) bitcoin full-node located at home, for confirming bitcoin transactions.
-* The remote iOS [Gordian Wallet](https://github.com/blockchainCommons/gordianwallet-ios) app seperately talks to a Linux [Spotbit](https://github.com/BlockchainCommons/spotbit) server in the cloud, for aggregating bitcoin price information.
+* The remote iOS [Gordian Wallet](https://github.com/blockchainCommons/gordianwallet-ios) app uses a Torgap to communicate with the Mac [Gordian Server](https://github.com/BlockchainCommons/GordianServer-macOS) bitcoin full-node located at home, which confirms Bitcoin transactions.
+* The remote iOS [Gordian Wallet](https://github.com/blockchainCommons/gordianwallet-ios) app seperately communicates through a Torgap with a Linux [Spotbit](https://github.com/BlockchainCommons/spotbit) server in the cloud, which aggregates bitcoin price information.
 
 ## Additional Information
 
@@ -32,7 +32,7 @@ Quick Connect 1.0 is a specification that uses a QR-code to establish a Torgap l
 
 * **[Quick Connect 1.0 API](https://github.com/BlockchainCommons/Gordian/blob/master/Docs/Quick-Connect-API.md) \(specification\).** Connectivity specs.
 
-We hope to extend the QuickConnect in version 2.0 to support links for multiple services in one QR code, to allow for multiple services like Bitcoin mainnet, testnet, and signet, as well as Lightning and SpotBit, as early demos of the capapabilities offered by Quick Connect 2.0's. This spec is in progress:
+We hope to extend the QuickConnect in version 2.0 to support links for multiple services in one QR code: connections to services such as Bitcoin mainnet, testnet, and signet, as well as Lightning and SpotBit, offer early demos of the capapabilities supported by Quick Connect 2.0. This spec is in progress:
 
 * **[Quick Connect 2.0 Requirements](https://github.com/BlockchainCommons/Airgapped-Wallet-Community/discussions)** Discussion.
 
