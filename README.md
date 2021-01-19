@@ -19,6 +19,12 @@ In this example:
 * The remote iOS [Gordian Wallet](https://github.com/blockchainCommons/gordianwallet-ios) app uses a Torgap to communicate with the Mac [Gordian Server](https://github.com/BlockchainCommons/GordianServer-macOS) bitcoin full-node located at home, which confirms Bitcoin transactions.
 * The remote iOS [Gordian Wallet](https://github.com/blockchainCommons/gordianwallet-ios) app seperately communicates through a Torgap with a Linux [Spotbit](https://github.com/BlockchainCommons/spotbit) server in the cloud, which aggregates bitcoin price information.
 
+### More on Spotbit
+
+[Spotbit](https://github.com/BlockchainCommons/spotbit) is currently our premiere Torgap application because it demonstrates a fully functional, publicly accessible example of Torgap usage. Though Bitcoin has long provided Tor interaction as an alternative method for accessing your full node, Bitcoin pricing services have remained a security hole: you could access your node, and so spend Bitcoin, but if you ever looked up pricing information, the whole world would know you were using Bitcoin. Worse, a pricing service could reveal to an attacker every single IP address that had accessed it, putting all of those users' coins in jeopardy. 
+
+Spotbit resolves these privacy and security problems by creating a Torgap between your wallet and the pricing service, and also serves as the first example of a Gordian microservice, which can provide additional functionality to the [Gordian Wallet](https://github.com/blockchainCommons/gordianwallet-ios).
+
 ## Additional Information
 
 The following files contain…
@@ -61,6 +67,14 @@ Torgap Onion is an experiment that combines `minisig` Ed25519 keys with Tor to e
 Torgap Timestamps allows for OpenTimestamping run as a Tor Onion service.
 
 * **[torgap-opentimestamps](https://github.com/BlockchainCommons/torgap-opentimestamps/blob/master/README.md).** StackScript installation for the Torgapped Open Timestamps.
+
+## Tor Addresses
+
+We currently maintain the following Tor services:
+
+* **Spotbit Server:** h6zwwkcivy2hjys6xpinlnz2f74dsmvltzsd4xb42vinhlcaoe7fdeqd.onion
+   * **Spotbit Test Server:** km3danfmt7aiqylbq5lhyn53zhv2hhbmkr6q5pjc64juiyuxuhcsjwyd.onion
+* **Tor Exit Node:** [644074F47257F9A906F9AA5C6B8926C1540A1DA8](https://metrics.torproject.org/rs.html#details/644074F47257F9A906F9AA5C6B8926C1540A1DA8)
 
 ## Status - Varied
 
