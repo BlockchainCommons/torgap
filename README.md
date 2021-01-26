@@ -121,6 +121,13 @@ The following people directly contributed to this repository. You can add your n
 | Christopher Allen | Principal Architect | [@ChristopherA](https://github.com/ChristopherA) | \<ChristopherA@LifeWithAlacrity.com\> | FDFE 14A5 4ECB 30FC 5D22  74EF F8D3 6C91 3574 05ED |
 | Gorazd Kovacic | Lead Researcher | [@gorazdko](https://github.com/gorazdko) | \<gorazdko@gmail.com\> | 41F0 EA16 99A7 4C1E 2FA4 1B53 8CF9 6BC3 FF9D BBCE |
 
+### Project Sponsors
+
+Thanks to our project sponsors for their support of *Torgap*:
+
+<img src="https://www.blockchaincommons.com/images/sponsors/blockchainbird.png" width=500>
+
+**[Blockchainbird](https://github.com/blockchainbird/bird)** is a free and open source software toolset with a manual to build an extra guarantee layer on existing database systems. It is free to use and adapt to your own needs. Smartphones and smart custody arranged? Then Bird gives wings to projects that are labeled as blockchain, but can in fact be implemented with databases.
 
 ## Responsible Disclosure
 
