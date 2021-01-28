@@ -36,21 +36,15 @@ Finally, the segregation of Torgapped services also creates a _separation of int
 
 ### How Does Blockchain Commons Use Tor?
 
-Blockchain Commons uses Tor to create [`Torgaps`](#what-is-torgap) in its architectural designs, as described below.
+Blockchain Commons uses Tor to create [`Torgaps`](#what-is-torgap) in its architectural designs, in the [Torgap Services](#torgap-services) section.
 
-However, Blockchain Commons also believes in open infrastructure, and so we have supported the Tor infrastructure itself. We run a Tor _exit node_, [644074F47257F9A906F9AA5C6B8926C1540A1DA8](https://metrics.torproject.org/rs.html#details/644074F47257F9A906F9AA5C6B8926C1540A1DA8), and we are working on Tor-related tools that we will give back to the Tor community.
+However, Blockchain Commons also believes in open infrastructure, and so we have supported the Tor infrastructure itself. We run a Tor _exit node_ which is a gateway where encrypted Tor traffic rejoins the regular internet [644074F47257F9A906F9AA5C6B8926C1540A1DA8](https://metrics.torproject.org/rs.html#details/644074F47257F9A906F9AA5C6B8926C1540A1DA8), and we are working on Tor-related tools that we will give back to the Tor community.
 
 ## Torgap Overview
 
 ### What is Torgap?
 
 A Torgap is a [`Tor-protocol`](#what-is-the-tor-protocol) link between a client and a server, that is a part of a larger system.
-
-At this time, Blockchain Commons is primarily using Torgaps as part of its Gordian system, to isolate clients, servers, and microservices:
-
-![](https://raw.githubusercontent.com/BlockchainCommons/Gordian/master/Images/appmap.jpg)
-
-Torgaps are usually not built around web services, but (as in our Gordian System) are instead links for services of other types.
 
 ### What is the Torgap Architecture?
 
@@ -60,13 +54,13 @@ A Torgap Architecture may also include _Airgaps_, when even higher levels of sec
 
 ### How is Torgap Different from Airgap?
 
-An Airgap is a divide between two services with no network connection. It is usually bridged via the photographing of QR codes or the entry of short lines of text.
+An Airgap is a divide between two services with no network connection. It is usually bridged via the photographing of QR codes or the entry of short lines of text, see [What is QuickConnect](#what-is-quickconnect)?
 
 A Torgap is a Tor link between two connected nework services, used when an Airgap is impractical.
 
-### What are the Adventages of the Torgap Architecture?
+### What are the Advantages of the Torgap Architecture?
 
-The biggest advantage of the Torgap architecture comes from _service anonymity_. If you are using the [Gordian system](https://github.com/BlockchainCommons/Gordian), third-party _eavesdroppers_ won't know that you're accessing Bitcoin services such as a full-node or the [Spotbit](https://github.com/BlockchainCommons/spotbit) pricing service. This can be critically important in a State that is hostile to digital currencies ... but is important everywhere. That's because many [#SmartCustody Adversaries](https://github.com/BlockchainCommons/SmartCustodyBook) arise from the loss of privacy: if attackers don't know you're using Bitcoin, they often can't steal it from you. The _identity pseudonymity_ of the Torgap architecture is an important advantage for the same reason.
+The biggest advantage of the Torgap architecture comes from _service anonymity_. If you are using the [Gordian system](https://github.com/BlockchainCommons/Gordian), third-party _eavesdroppers_ won't know that you're accessing Bitcoin services such as a full-node or the [Spotbit](https://github.com/BlockchainCommons/spotbit) pricing service. This can be critically important in a State that is hostile to digital assets ... but is important everywhere. That's because many [#SmartCustody Adversaries](https://github.com/BlockchainCommons/SmartCustodyBook) arise from the loss of privacy: if attackers don't know you're using Bitcoin, they often can't steal it from you. The _identity pseudonymity_ of the Torgap architecture is an important advantage for the same reason.
 
 The Torgap architecture is also able to leverage new _security_ in several ways.
 
@@ -82,7 +76,11 @@ The ultimate goal of the Torgap architecture is to separate keys and processes i
 
 ### How is Torgap used in the Gordian System?
 
-Currently, there are two Torgaps in the [Gordian system](https://github.com/BlockchainCommons/Gordian), as shown in the app map, above. The mobile [Gordian Wallet](https://github.com/BlockchainCommons/GordianWallet-iOS) and the full-node [Gordian Server](https://github.com/BlockchainCommons/GordianServer-macOS) are connected by a Torgap. There is also a Torgap between the Gordian Wallet and our first microservice, the [Spotbit pricing server](https://github.com/BlockchainCommons/spotbit).
+Torgaps isolate clients, servers, and microservices in the [Gordian system](https://github.com/BlockchainCommons/Gordian). Currently, there are two Torgaps as shown in the app map, below. The mobile [Gordian Wallet](https://github.com/BlockchainCommons/GordianWallet-iOS) and the full-node [Gordian Server](https://github.com/BlockchainCommons/GordianServer-macOS) are connected by a Torgap. There is also a Torgap between the Gordian Wallet and our first microservice, the [Spotbit pricing server](https://github.com/BlockchainCommons/spotbit). **{CAN WE INCLUDE A KEY IN THE DIAGRAM TO EXPLAIN WHAT EACH ICON MEANS... TOR=ONION, AIR=AIRGAP; AND CAN WE ADD "QuickConnect" text between the Wallet and Server?]**
+
+![](https://raw.githubusercontent.com/BlockchainCommons/Gordian/master/Images/appmap.jpg)
+
+Torgaps are usually not built around web services **[CAN WE ELABORATE ON THIS WEB SERVICES POINT, WHY ARE THEY NOT USED?]**, but (as in our Gordian System) are instead links for services of other types.
 
 ### What is QuickConnect?
 
@@ -112,7 +110,7 @@ However, the most important gains may come for the end-user. They can look up DI
 
 ### What is the Future of Torgap?
 
-Blockchain Commons plans to investigate a number of other examples of Torgap-based microservices. In addition to existing Torgaps between Bitcoin wallets & full-nodes (Quick Connect) and the Gordian Wallet and its price discovery tool (SpotBit), we are also researching potential Torgaps for:
+Blockchain Commons plans to investigate a number of other examples of Torgap-based microservices. In addition to existing Torgaps between Bitcoin wallets & full-nodes (QuickConnect) and the Gordian Wallet and its price discovery tool (SpotBit), we are also researching potential Torgaps for:
 
 * Lightning Network (C-Lighting & LND)
 * Blockchain Explorers (in particular Esplora for Bitcoin)
@@ -122,11 +120,11 @@ Blockchain Commons plans to investigate a number of other examples of Torgap-bas
 * Sharded Key Storage
 * Secure Chat & Forwarding Services
 * DID Resolution Services for other DID methods
-* Paid Data Services (possibly throug Lightning-based LSATs)
+* Paid Data Services (possibly through Lightning-based LSATs)
 * Confidential Data Stores
 
-Torgaps can be used anywhere that it's useful to partition off a service. Doing so will accumulate the privacy, security, and non-correlation advantages implicit in this architectural approach, as well as supporting impoved seperation-of-interests and partitioning off single-points-of-failure.
+Torgaps can be used anywhere that it's useful to partition off a service, especially when using an Airgap is impractical. Doing so will accumulate the privacy, security, and non-correlation advantages implicit in this architectural approach, as well as supporting improved seperation-of-interests and partitioning off single-points-of-failure.
 
 If you have other ideas for how to use a Torgap, join in the discussion in the [Airgapped Wallet Community](https://github.com/BlockchainCommons/Airgapped-Wallet-Community/discussions/34).
 
-If you'd like to see these future projects come to life, we need your support. We are funded entirely by patronage, donations, and collaborative partnerships with people like you. Please consider becoming a [GitHub Sponsor](https://github.com/sponsors/BlockchainCommons) or by making a donation at btcpay.blockchaincommons.com.
+If you'd like to see these future projects come to life, we need your support. We are funded entirely by patronage, donations, and collaborative partnerships with people like you. Please consider becoming a [GitHub Sponsor](https://github.com/sponsors/BlockchainCommons) or by making a one time donation at btcpay.blockchaincommons.com.
