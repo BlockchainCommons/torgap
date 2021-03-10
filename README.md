@@ -11,9 +11,9 @@ It supports privacy, service anonymity, identity psuedonymity, non-correlation, 
 
 ## Example of Torgap Use
 
-There are two Torgaps and three Airgaps in the current [Gordian](https://github.com/BlockchainCommons/Gordian) architecture:
+There are two Torgaps and a multitude of possible airgaps Airgaps in the current [Gordian](https://github.com/BlockchainCommons/Gordian) architecture:
 
-<img src="https://raw.githubusercontent.com/BlockchainCommons/Gordian/master/Images/appmap.jpg" width="500" />
+<img src="https://raw.githubusercontent.com/BlockchainCommons/Gordian/master/Images/appmap.jpg" />
 
 In this example:
 * The remote iOS [Gordian Wallet](https://github.com/blockchainCommons/gordianwallet-ios) app uses a Torgap to communicate with the Mac [Gordian Server](https://github.com/BlockchainCommons/GordianServer-macOS) bitcoin full-node located at home, which confirms Bitcoin transactions.
